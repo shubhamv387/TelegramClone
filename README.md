@@ -1,8 +1,7 @@
-# React + Vite
+# Telegram Clone
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+I have almost completed the project.
 
-Currently, two official plugins are available:
+I have implemented the infinite scroll for All chat list component.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+You check it on phone because phone screen hight is less than pc.

@@ -36,7 +36,7 @@ const ChatList = () => {
     };
 
     getAllChats();
-  }, []);
+  }, [page]);
 
   const handleScroll = useCallback(() => {
     if (page >= 1 && page <= 10 && !loading) {
