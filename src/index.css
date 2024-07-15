@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --text: 0 85% 5%;
+    --background: 0 0% 98%;
+    --primary: 11 100% 65%;
+    --secondary: 60 2% 90%;
+    --accent: 11 100% 41%;
+    --border: 0 0% 0%;
+    /* some custom css variables */
+    --background-1: 0, 0%, 98%;
+    --primary-1: 11, 100%, 65%;
+    --secondary-1: 60, 2%, 90%;
+    --accent-1: 11, 100%, 41%;
+    --border-1: 0, 0%, 0%;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --background: 0 0% 13%;
+      --theme-bg: 0 0% 6%;
+
+      --input-bg: 240 5% 96%;
+
+      --text: 0 0% 100%;
+      --text-secondary: 0 0% 67%;
+      --text-meta: 216 5% 43%;
+
+      --chat-active: 248 46% 60%;
+      --chat-hover: 0 0% 17%;
+
+      --primary: 248 46% 60%;
+
+      --header-shadow: #00000040;
+    }
+  }
+  :root[data-theme='dark'] {
+    --background: 0 0% 13%;
+    --theme-bg: 0 0% 6%;
+
+    --input-bg: 0 0% 17%;
+
+    --text: 0 0% 100%;
+    --text-secondary: 0 0% 67%;
+    --text-meta: 216 5% 43%;
+
+    --chat-active: 248 46% 60%;
+    --chat-hover: 0 0% 17%;
+
+    --primary: 248 46% 60%;
+
+    --header-shadow: #00000040;
+  }
+
+  :root[data-theme='light'] {
+    --background: 0 0% 100%;
+    --theme-bg: 0 0% 100%;
+
+    --input-bg: 240 5% 96%;
+
+    --text: 0 0% 0%;
+    --text-secondary: 0 0% 55%;
+    --text-meta: 216 5% 43%;
+
+    --chat-active: 210 83% 56%;
+    --chat-hover: 240 5% 96%;
+
+    --primary: 210 83% 56%;
+
+    --header-shadow: #7272722b;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Roboto', sans-serif;
+}
+
+header.custom-shadow {
+  box-shadow: 0 2px 2px var(--header-shadow);
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 0.5rem;
+  background-color: hsl(var(--chat-hover));
+  border: 1px solid transparent;
+  background-clip: content-box;
+}
+
+::-webkit-scrollbar-track {
+  background-color: hsl(var(--background)) !important;
+}
