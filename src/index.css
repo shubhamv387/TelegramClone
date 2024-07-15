@@ -59,7 +59,7 @@
 
   :root[data-theme='light'] {
     --background: 0 0% 100%;
-    --theme-bg: 0 0% 100%;
+    --theme-bg: 0 0% 95%;
 
     --input-bg: 240 5% 96%;
 
@@ -121,4 +121,27 @@ header.custom-shadow {
 
 ::-webkit-scrollbar-track {
   background-color: hsl(var(--background)) !important;
+}
+
+.chat-left {
+  display: inline;
+  float: left;
+  clear: both;
+  background: #e7d518;
+  border-radius: 0 30px 30px 30px;
+  font-size: 17px;
+  padding: 8px 20px;
+  max-width: 90%;
+  margin: 4px 0;
+}
+.chat-right {
+  display: inline;
+  clear: both;
+  float: right;
+  background: #44e9fb;
+  border-radius: 30px 30px 0 30px;
+  font-size: 17px;
+  padding: 8px 20px;
+  max-width: 90%;
+  margin: 4px 0;
 }
